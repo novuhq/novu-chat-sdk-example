@@ -1,4 +1,5 @@
 allowBuilds:
-  '@novu/chat-sdk-adapter': true
+  # Ships prebuilt dist/ on npm — no build step needed.
+  '@novu/chat-sdk-adapter': false
   sharp: true
   unrs-resolver: true

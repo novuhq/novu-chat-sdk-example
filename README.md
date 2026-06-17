@@ -22,12 +22,14 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) for setup instructions and bridge status.
 
-### Adapter install note
+### Dependencies
 
-`@novu/chat-sdk-adapter` is not on npm yet. On `pnpm install`, a postinstall script clones the adapter from the [`nv-8063-chat-adapter-novu`](https://github.com/novuhq/novu/tree/nv-8063-chat-adapter-novu) branch and builds it into `.vendor/chat-sdk-adapter`. Once published, replace the `file:` dependency in `package.json` with a normal semver pin:
+This example installs the published adapter and Chat SDK straight from npm:
 
 ```json
-"@novu/chat-sdk-adapter": "^0.1.0"
+"@novu/chat-sdk-adapter": "0.0.1",
+"chat": "4.30.0",
+"@chat-adapter/state-memory": "4.30.0"
 ```
 
 ## Connect to Novu
