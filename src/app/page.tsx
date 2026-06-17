@@ -531,14 +531,6 @@ export default function HomePage() {
           Webhook: <code className="rounded bg-muted px-1">POST {WEBHOOK_PATH}</code>
         </span>
         <a
-          href="https://github.com/novuhq/novu/pull/11593"
-          target="_blank"
-          rel="noreferrer"
-          className="underline underline-offset-4 hover:text-foreground"
-        >
-          Adapter PR
-        </a>
-        <a
           href="https://chat-sdk.dev"
           target="_blank"
           rel="noreferrer"
