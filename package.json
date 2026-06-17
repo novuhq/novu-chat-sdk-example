@@ -11,7 +11,7 @@
   "dependencies": {
     "@base-ui/react": "^1.5.0",
     "@chat-adapter/state-memory": "4.30.0",
-    "@novu/chat-sdk-adapter": "0.0.1",
+    "@novu/chat-sdk-adapter": "latest",
     "chat": "4.30.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

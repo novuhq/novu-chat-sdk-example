@@ -15,8 +15,8 @@ importers:
         specifier: 4.30.0
         version: 4.30.0
       '@novu/chat-sdk-adapter':
-        specifier: 0.0.1
-        version: 0.0.1(chat@4.30.0)(react@19.1.0)
+        specifier: latest
+        version: 0.0.2(chat@4.30.0)(react@19.1.0)
       chat:
         specifier: 4.30.0
         version: 4.30.0
@@ -109,6 +109,10 @@ packages:
     peerDependenciesMeta:
       '@types/react':
         optional: true
+
+  '@chat-adapter/shared@4.30.0':
+    resolution: {integrity: sha512-IuYtbn/p1FBXvp7JYGEMLCt07GHOMlyjx7OlZXPJwLTravcyJuP7Q6N31r6c1yubMhM8PLb8eT8l/YnjwYjs9Q==}
+    engines: {node: '>=20'}
 
   '@chat-adapter/state-memory@4.30.0':
     resolution: {integrity: sha512-huYnGBKBiY6s/GaYgtAmr0zM6ihvGl8/NOEV9oqY89jr6Zdnm/ZXdpXvDKdXoaxmDXCiZr2U54DbSDzpvGQ6fA==}
@@ -448,10 +452,10 @@ packages:
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
 
-  '@novu/chat-sdk-adapter@0.0.1':
-    resolution: {integrity: sha512-Rb7Nyj4oFPE9RgWcRxfpXfJWQ2eV4LR4JoDxpedvlSIkRNxyj5/kf0360m5u02pqT7SEmCE23xlmc1jBDYs/Lw==}
+  '@novu/chat-sdk-adapter@0.0.2':
+    resolution: {integrity: sha512-QNmtJ50Wq5iu8PCOPbrs5EUdJhA3jHulQo6PqcQKTbbCe5noR7MkAtnK+Ru9BT506ujK36s1pGt2DJDgaOMd2Q==}
     peerDependencies:
-      chat: '>=4.30.0'
+      chat: ^4.30.0
       react: '>=18.0.0 || >=19.0.0'
     peerDependenciesMeta:
       react:
@@ -2209,6 +2213,14 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.17
 
+  '@chat-adapter/shared@4.30.0':
+    dependencies:
+      chat: 4.30.0
+    transitivePeerDependencies:
+      - ai
+      - supports-color
+      - zod
+
   '@chat-adapter/state-memory@4.30.0':
     dependencies:
       chat: 4.30.0
@@ -2484,11 +2496,16 @@ snapshots:
 
   '@nolyfill/is-core-module@1.0.39': {}
 
-  '@novu/chat-sdk-adapter@0.0.1(chat@4.30.0)(react@19.1.0)':
+  '@novu/chat-sdk-adapter@0.0.2(chat@4.30.0)(react@19.1.0)':
     dependencies:
+      '@chat-adapter/shared': 4.30.0
       chat: 4.30.0
     optionalDependencies:
       react: 19.1.0
+    transitivePeerDependencies:
+      - ai
+      - supports-color
+      - zod
 
   '@rtsao/scc@1.1.0': {}
 

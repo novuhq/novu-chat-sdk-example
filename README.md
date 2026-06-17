@@ -24,13 +24,15 @@ Open [http://localhost:3000](http://localhost:3000) for setup instructions and b
 
 ### Dependencies
 
-This example installs the published adapter and Chat SDK straight from npm:
+This example installs the published adapter and Chat SDK straight from npm. The adapter tracks the `latest` dist-tag so a fresh install always pulls the newest release:
 
 ```json
-"@novu/chat-sdk-adapter": "0.0.1",
+"@novu/chat-sdk-adapter": "latest",
 "chat": "4.30.0",
 "@chat-adapter/state-memory": "4.30.0"
 ```
+
+Run `pnpm update @novu/chat-sdk-adapter --latest` to move the lockfile to the newest published version.
 
 ## Connect to Novu
 
