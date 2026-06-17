@@ -1,0 +1,4 @@
+allowBuilds:
+  '@novu/chat-sdk-adapter': true
+  sharp: true
+  unrs-resolver: true

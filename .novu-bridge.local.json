@@ -1,0 +1,6 @@
+{
+  "secretKey": "c9b475cd30c0e65eac9b9e9f14de8354",
+  "agentIdentifier": "chat-sdk-test",
+  "apiBaseUrl": "https://api.novu.co",
+  "bridgeUrl": "https://unelapsed-cosmopolitanly-jeneva.ngrok-free.dev/api/webhooks/novu"
+}
