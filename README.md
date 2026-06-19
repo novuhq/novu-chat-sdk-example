@@ -8,9 +8,6 @@ A clean Next.js boilerplate showing how to build a multi-channel chat bot with [
 - **Setup UI** at `/` — step-by-step instructions to connect your Novu agent to a local or deployed instance
 - **Handler examples** — echo, interactive cards, `getNovuContext()` (`whoami`, `resolve`), `onAction`, `onReaction`
 
-```
-End-user channels → Novu (normalize) → your Next.js app (@novu/chat-sdk-adapter) → Novu reply API → channel
-```
 
 ## Quick start
 
